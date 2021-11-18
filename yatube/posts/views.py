@@ -6,9 +6,9 @@ from django.shortcuts import render
 
 #Главная страница
 def index(request):
-    return HttpResponse('Главная страница')
+    return render(request, 'posts/index.html', {})
 
-
+#template = ('index.html/') return render(request, template, {})
 
 #Страница сообществ
 def group_posts(request, slug):
